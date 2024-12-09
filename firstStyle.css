@@ -1,0 +1,284 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding-top: 80px; /* Increase this if the header is tall */
+    background: linear-gradient(120deg, #2980b9, #25cc97);
+    color: #fff;
+  }
+  
+  /* Header Styling */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed; /* Fixes the header at the top */
+    top: 0; /* Ensures it's at the top of the page */
+    left: 0; /* Ensures it's aligned to the left edge */
+    width: 100%; /* Ensures it spans the full width of the screen */
+    z-index: 1000; /* Keeps the header on top of other content */
+  }
+  
+  header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  /* Styling for the email form */
+.email-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .email-form input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-right: 1rem;
+    width: 300px;
+  }
+  
+  .email-form button {
+    padding: 0.8rem 2rem;
+    background: #25cc97;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .email-form button:hover {
+    background: #2980b9;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  header nav ul li {
+    margin: 0 1rem;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  header nav ul li a:hover {
+    color: #25cc97;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero .btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: #25cc97;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .hero .btn:hover {
+    background: #2980b9;
+  }
+  
+  /* Services Section */
+  #services {
+    padding: 3rem 1rem;
+    text-align: center;
+    background: #332ebe;
+    color: #000000;
+  }
+  
+  #services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #000000;
+  }
+  
+  /* Individual Language Cards */
+  #services .language {
+    display: inline-block;
+    background: #413cd5;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #services .language:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  #services .language h3 {
+    font-size: 1.8rem;
+    color: #2c2c2c;
+    margin-bottom: 0.5rem;
+  }
+  
+  #services .language p {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  
+  #services .learn-button {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: #2980b9;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  #services .learn-button:hover {
+    background: #4593cf;
+    transform: translateY(-2px);
+  }
+  
+  /* Learn Section Styling */
+  #Learn {
+    padding: 3rem 1rem;
+    text-align: center;
+    background: #f0f0f0;
+  }
+  
+  /* Content box styling */
+  .learn-programm {
+    margin-top: 2rem;
+  }
+  
+  .learn-programm h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2980b9;
+  }
+  
+  .learn-programm p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Image styling */
+  .learn-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .learn-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-height: 400px;
+    width: 80%;
+  }
+  
+  /* Learn Button Styling */
+  .learn-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #2980b9;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    text-align: center;
+  }
+  
+  .learn-button:hover {
+    background: #4593cf;
+    transform: translateY(-3px);
+  }
+  
+  /* Footer Panel Styling */
+  .foot-panel1 {
+    text-align: center;
+    padding: 1rem;
+    color: rgb(56, 64, 151);
+    background: #1b1b1b;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .foot-panel2 {
+    display: flex;
+    justify-content: space-around;
+    background: #1b1b1b;
+    padding: 2rem;
+    color: #fff;
+  }
+  
+  .foot-panel2 ul {
+    list-style: none;
+  }
+  
+  .foot-panel2 ul p {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .foot-panel2 ul a {
+    text-decoration: none;
+    color: #ddd;
+    display: block;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .foot-panel2 ul a:hover {
+    color: #25cc97;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #0d0d0d;
+    color: #888;
+    font-size: 0.9rem;
+  }
+  
